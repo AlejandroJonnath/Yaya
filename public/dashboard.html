@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard — Marcelo Suárez</title>
+  <link rel="icon" href="/assets/img/logo.svg">
+  <link rel="stylesheet" href="/assets/css/dashboard.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Dashboard</h1>
+    <div class="spacer"></div>
+    <button id="logout" class="ghost">Cerrar sesión</button>
+  </header>
+
+  <main class="wrap">
+    <!-- Toolbar / filtros -->
+    <section class="toolbar">
+      <input id="search" class="input" type="search" placeholder="Buscar por destino o tipo (ej. artwork, nav, canto-azul)" />
+      <select id="typeFilter" class="select">
+        <option value="">Tipo: Todos</option>
+        <option value="artwork">Sólo artwork</option>
+        <option value="nav">Sólo nav</option>
+      </select>
+      <select id="limitFilter" class="select">
+        <option value="25">Últimos 25</option>
+        <option value="50">Últimos 50</option>
+        <option value="100">Últimos 100</option>
+      </select>
+      <button id="clearFilters" class="btn">Limpiar</button>
+      <button id="exportCsv" class="btn brand">Exportar CSV</button>
+    </section>
+
+    <!-- KPIs -->
+    <section class="cards">
+      <article class="card">
+        <h3>Clicks totales</h3>
+        <div class="kpi" id="k_all">0</div>
+        <div class="sub" id="k_all_sub"></div>
+      </article>
+      <article class="card">
+        <h3>Clicks en obras</h3>
+        <div class="kpi" id="k_art">0</div>
+        <div class="sub" id="k_art_sub"></div>
+      </article>
+      <article class="card">
+        <h3>Navegación</h3>
+        <div class="kpi" id="k_nav">0</div>
+        <div class="sub" id="k_nav_sub"></div>
+      </article>
+    </section>
+
+    <!-- Tops -->
+    <section class="panel">
+      <h2>Cuadros más populares</h2>
+      <ol id="list_artworks" class="list"></ol>
+      <div id="art_empty" class="empty" style="display:none">Aún no hay clics en obras.</div>
+    </section>
+
+    <section class="panel">
+      <h2>Navegación más usada</h2>
+      <ol id="list_nav" class="list"></ol>
+      <div id="nav_empty" class="empty" style="display:none">Aún no hay clics de navegación.</div>
+    </section>
+
+    <!-- Actividad reciente -->
+    <section class="panel">
+      <h2>Actividad</h2>
+      <div class="tablewrap">
+        <table class="table" id="recent">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Tipo</th>
+              <th>Destino</th>
+              <th>Acción</th>
+              <th>Meta</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="recent_empty" class="empty" style="display:none">Sin actividad para los filtros aplicados.</div>
+    </section>
+  </main>
+
+  <script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

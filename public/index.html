@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcelo Suárez — Obras</title>
+  <link rel="icon" href="/assets/img/logo.svg">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta name="description" content="Obras artísticas de Marcelo Suárez. Selección de cuadros a la venta y contacto." />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navwrap">
+      <a class="brand" href="/">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" stroke="currentColor"/></svg>
+        <span>Marcelo Suárez</span>
+      </a>
+      <div class="navlinks">
+        <a href="#galeria" data-nav="galeria">Galería</a>
+        <a href="#sobre" data-nav="sobre">Sobre</a>
+        <a href="#contacto" data-nav="contacto">Contacto</a>
+        <a class="login-btn" href="/login.html" data-nav="login">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Color que respira. Trama que recuerda.</h1>
+      <p>Serie curada de obras originales de Marcelo Suárez. Cada pieza acompaña procesos, ritmos y memorias. Consulta la galería y contáctanos para disponibilidad.</p>
+      <div class="cta">
+        <a class="button" href="#galeria" data-nav="cta-galeria">Ver galería</a>
+        <a class="button ghost" href="#contacto" data-nav="cta-contacto">Solicitar catálogo</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1549887534-1541e9323f5b?q=80&w=1400&auto=format&fit=crop" alt="Collage de pinturas" style="width:100%; border-radius:18px; border:1px solid rgba(255,255,255,.08)">
+    </div>
+  </header>
+
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <p class="lead">Obras destacadas. Haz clic en <em>Detalles</em> para ver la ficha de cada obra.</p>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section id="sobre" class="section about">
+    <div>
+      <h2>Sobre Marcelo</h2>
+      <p>Marcelo Suárez explora la vibración del color y la materia. Sus cuadros surgen de capas, pausas y hallazgos. Esta selección reúne piezas recientes disponibles para venta directa.</p>
+      <p>Para exhibiciones, encargos o adquisiciones institucionales, escribe al correo del estudio.</p>
+    </div>
+    <div>
+      <img src="assets/img/fotoPresentación.jpg" alt="Estudio de artista" style="width:100%; border-radius:18px; border:1px solid rgba(255,255,255,.08)">
+    </div>
+  </section>
+
+  <!-- CONTACTO (como lo tienes ahora con tarjetas) -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p class="lead">Estas son las formas de comunicarte con el estudio.</p>
+    <div class="contact">
+      <a class="contact-card" href="https://wa.me/593939863068" target="_blank" rel="noopener" data-nav="contact-whatsapp" title="Escribir por WhatsApp">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20.52 3.48A11.94 11.94 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.12 1.6 5.91L0 24l6.25-1.63A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52Z" fill="currentColor" opacity=".12"/>
+          <path d="M12 2.4A9.6 9.6 0 0 1 21.6 12 9.6 9.6 0 0 1 12 21.6c-1.67 0-3.23-.44-4.58-1.22l-.33-.19-3.54.92.95-3.45-.2-.34A9.57 9.57 0 0 1 2.4 12 9.6 9.6 0 0 1 12 2.4Zm5.33 12.41c-.08.23-.45.44-.9.5-.23.03-.52.06-.85-.05-.2-.07-.45-.15-.77-.3-1.36-.6-2.24-1.06-3.39-2.2-1.24-1.22-1.8-2.26-2.27-3.96-.11-.43-.01-.8.22-.96.14-.09.32-.14.53-.14.12 0 .25 0 .36.01.11.01.27-.04.42.32.16.39.54 1.35.59 1.45.05.1.08.22.01.35-.08.17-.12.28-.24.43-.12.15-.25.33-.36.45-.12.12-.25.25-.11.49.14.24.62 1.01 1.33 1.64.92.82 1.7 1.08 1.95 1.2.25.12.4.1.55-.06.15-.16.63-.73.8-.98.17-.25.34-.2.56-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.02.81Z" fill="currentColor"/>
+        </svg>
+        <div class="contact-text">
+          <strong>Teléfono (WhatsApp)</strong>
+          <div>0939863068</div>
+        </div>
+      </a>
+
+      <a class="contact-card" href="mailto:addrriel@hotmail.com" data-nav="contact-email" title="Enviar correo">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" stroke="currentColor"/>
+          <path d="M22 7 12 13 2 7" stroke="currentColor"/>
+        </svg>
+        <div class="contact-text">
+          <strong>Correo</strong>
+          <div>addrriel@hotmail.com</div>
+        </div>
+      </a>
+
+      <a class="contact-card" href="tel:2527176" data-nav="contact-landline" title="Llamar teléfono convencional">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 2h12v6H6V2Z" stroke="currentColor"/>
+          <path d="M7 8h10v8a4 4 0 0 1-4 4H11a4 4 0 0 1-4-4V8Z" stroke="currentColor"/>
+        </svg>
+        <div class="contact-text">
+          <strong>Convencional</strong>
+          <div>2527176</div>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://maps.app.goo.gl/tJWA6AZ6Y32FPtxC9" target="_blank" rel="noopener" data-nav="contact-map" title="Abrir en Google Maps">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12Z" stroke="currentColor"/>
+          <circle cx="12" cy="10" r="2.5" stroke="currentColor"/>
+        </svg>
+        <div class="contact-text">
+          <strong>Dirección</strong>
+          <div>Ver en Google Maps</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="row">
+      <small>© <span id="year"></span> Estudio Marcelo Suárez</small>
+      <small>Instagram · Email: estudio@marcelosuarez.art</small>
+    </div>
+  </footer>
+
+  <script src="/assets/js/analytics.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+  <!-- Modal (mini tarjeta de detalles) -->
+  <div id="artModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img id="m_img" alt="Obra" />
+        </div>
+        <div class="modal-body">
+          <h3 id="m_titulo"></h3>
+          <p class="muted" id="m_tecnica"></p>
+          <p class="muted" id="m_medidas"></p>
+          <p class="price" id="m_precio"></p>
+          <div class="modal-actions">
+            <a id="m_contact" class="button" href="#contacto">Contactar</a>
+            <button id="m_cerrar" class="button ghost">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+  </div>
+</body>
+</html>

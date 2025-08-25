@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+:root{--bg:#0e0f13; --panel:#141621; --text:#e8ecf8; --muted:#a8b0c2; --brand:#9a6cff}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0; background: radial-gradient(1200px 600px at 10% 0%, #1b1e2b 0%, var(--bg) 45%), radial-gradient(1200px 600px at 90% 10%, #1b1829 0%, var(--bg) 60%); font-family:Inter, system-ui}
+.login{display:grid; place-items:center; height:100%}
+.panel{background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); padding:26px; border-radius:16px; width:min(420px, 92vw); color:var(--text)}
+.panel h1{margin:0 0 6px}
+.panel .muted{color:var(--muted); margin:0 0 16px}
+.input{width:100%; padding:12px; border-radius:12px; background:#0c0e15; border:1px solid rgba(255,255,255,.08); color:var(--text); margin:6px 0 12px}
+.input:focus{outline:none; border-color:var(--brand)}
+.button{width:100%; background:linear-gradient(135deg, var(--brand), #6ec8ff); color:#0b0d14; font-weight:700; padding:12px; border:none; border-radius:12px; cursor:pointer}
+.back{display:inline-block; margin-top:12px; color:var(--muted); text-decoration:none}
+.msg{margin-top:12px; color:#ffb4b4}

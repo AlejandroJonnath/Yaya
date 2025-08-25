@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acceso administrador — Marcelo Suárez</title>
+  <link rel="icon" href="/assets/img/logo.svg">
+  <link rel="stylesheet" href="/assets/css/login.css" />
+</head>
+<body>
+  <main class="login">
+    <form id="loginForm" class="panel">
+      <h1>Dashboard</h1>
+      <p class="muted">Acceso solo para administrador</p>
+      <label>Usuario</label>
+      <input class="input" name="username" required placeholder="admin" />
+      <label>Contraseña</label>
+      <input class="input" name="password" type="password" required placeholder="••••••" />
+      <button class="button" type="submit">Entrar</button>
+      <a class="back" href="/">← Volver al sitio</a>
+      <div id="msg" class="msg"></div>
+    </form>
+  </main>
+  <script src="/assets/js/auth.js"></script>
+</body>
+</html>
